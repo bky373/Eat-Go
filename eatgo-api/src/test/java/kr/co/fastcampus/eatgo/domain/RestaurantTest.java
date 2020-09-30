@@ -10,16 +10,18 @@ class RestaurantTest {
 
     @BeforeEach
     void setUp() {
-        restaurant = new Restaurant("Bob zip", "Seoul");
+        restaurant = new Restaurant(1004L, "Bob zip", "Seoul");
     }
 
     @Test
     public void creation() {
         //when
+        Long id = restaurant.getId();
         String name = restaurant.getName();
         String address = restaurant.getAddress();
 
         // then
+        assertThat(id).isEqualTo(1004);
         assertThat(name).isEqualTo("Bob zip");
         assertThat(address).isEqualTo("Seoul");
     }
@@ -28,7 +30,7 @@ class RestaurantTest {
     public void information() {
         // when
         String info = restaurant.getInformation();
-        
+
         assertThat(info).isEqualTo("Bob zip in Seoul");
     }
 }
