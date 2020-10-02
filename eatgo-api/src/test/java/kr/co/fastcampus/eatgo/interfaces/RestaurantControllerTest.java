@@ -62,13 +62,14 @@ public class RestaurantControllerTest {
                 .name("Fake house")
                 .address("Seoul")
                 .build();
+        MenuItem menuItem = MenuItem.builder().name("Kimchi").build();
+        restaurant1.setMenuItems(Arrays.asList(menuItem));
+
         Restaurant restaurant2 = Restaurant.builder()
                 .id(2020L)
                 .name("Fake cyber")
                 .address("Seoul")
                 .build();
-        MenuItem menuItem = MenuItem.builder().name("Kimchi").build();
-        restaurant1.setMenuItems(Arrays.asList(menuItem));
 
         given(restaurantService.getRestaurant(1004L)).willReturn(restaurant1);
         given(restaurantService.getRestaurant(2020L)).willReturn(restaurant2);
