@@ -10,7 +10,11 @@ class RestaurantTest {
 
     @BeforeEach
     void setUp() {
-        restaurant = new Restaurant(1004L, "Bob zip", "Seoul");
+        restaurant = Restaurant.builder()
+                .id(1004L)
+                .name("Bob zip")
+                .address("Seoul")
+                .build();
     }
 
     @Test
