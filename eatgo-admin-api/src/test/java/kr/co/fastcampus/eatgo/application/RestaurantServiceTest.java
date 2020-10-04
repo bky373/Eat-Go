@@ -34,8 +34,9 @@ class RestaurantServiceTest {
         List<Restaurant> restaurants = new ArrayList<>();
         Restaurant restaurant = Restaurant.builder()
                 .id(1004L)
-                .name("Bob zip")
+                .categoryId(1L)
                 .address("Seoul")
+                .name("Bob zip")
                 .build();
         restaurants.add(restaurant);
 

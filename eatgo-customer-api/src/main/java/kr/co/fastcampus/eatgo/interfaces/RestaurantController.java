@@ -16,9 +16,10 @@ public class RestaurantController {
 
     @GetMapping("/restaurants")
     public List<Restaurant> list(
-            @RequestParam("region") String region
+            @RequestParam("region") String region,
+            @RequestParam("category") Long categoryId
     ) {
-        return restaurantService.getRestaurants(region);
+        return restaurantService.getRestaurants(region, categoryId);
     }
 
     @GetMapping("/restaurants/{id}")
