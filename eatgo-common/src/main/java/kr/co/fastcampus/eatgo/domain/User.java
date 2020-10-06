@@ -44,4 +44,5 @@ public class User {
     public void deactivate() {
         level = 0L;
     }
+
 }
