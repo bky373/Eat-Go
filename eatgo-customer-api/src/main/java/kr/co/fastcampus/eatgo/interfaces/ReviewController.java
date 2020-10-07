@@ -1,8 +1,8 @@
 package kr.co.fastcampus.eatgo.interfaces;
 
 import io.jsonwebtoken.Claims;
-import kr.co.fastcampus.eatgo.application.ReviewService;
 import kr.co.fastcampus.eatgo.domain.Review;
+import kr.co.fastcampus.eatgo.application.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;

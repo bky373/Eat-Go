@@ -1,7 +1,7 @@
 package kr.co.fastcampus.eatgo.application;
 
-import kr.co.fastcampus.eatgo.domain.Reservation;
 import kr.co.fastcampus.eatgo.domain.ReservationRepository;
+import kr.co.fastcampus.eatgo.domain.Reservation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
