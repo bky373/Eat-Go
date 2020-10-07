@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(MenuItemController.class)
-class MenuItemControllerTest {
+class MenuItemControllerTests {
 
     @Autowired
     MockMvc mvc;

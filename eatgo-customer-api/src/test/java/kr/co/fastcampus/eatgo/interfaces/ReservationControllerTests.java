@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(ReservationController.class)
-class ReservationControllerTest {
+class ReservationControllerTests {
 
     @Autowired
     private MockMvc mvc;

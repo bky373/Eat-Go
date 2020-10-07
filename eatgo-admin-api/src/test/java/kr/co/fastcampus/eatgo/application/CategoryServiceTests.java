@@ -11,9 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.verify;
 
-public class CategoryServiceTest {
+public class CategoryServiceTests {
 
     private CategoryService categoryService;
 
@@ -36,6 +38,15 @@ public class CategoryServiceTest {
 
         List<Category> categories = categoryService.getCategories();
         Category category = categories.get(0);
+
+        assertThat(category.getName()).isEqualTo("Korean Food");
+    }
+
+    @Test
+    void addCategory() {
+        Category category = categoryService.addCategory("Korean Food");
+
+        verify(categoryRepository).save(any());
 
         assertThat(category.getName()).isEqualTo("Korean Food");
     }

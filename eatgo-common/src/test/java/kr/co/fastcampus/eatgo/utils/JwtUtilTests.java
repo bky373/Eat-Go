@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class JwtUtilTest {
+class JwtUtilTests {
 
     private static String SECRET = "12345678901234567890123456789012";
 

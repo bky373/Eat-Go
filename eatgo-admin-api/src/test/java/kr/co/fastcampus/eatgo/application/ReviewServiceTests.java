@@ -13,7 +13,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 
-public class ReviewServiceTest {
+public class ReviewServiceTests {
 
     private ReviewService reviewService;
 
